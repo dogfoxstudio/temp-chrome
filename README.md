@@ -1,4 +1,4 @@
-# temp-crhome
+# temp-chrome
 
 Генерация и запуск анонимных профилей Chrome
 
