@@ -16,6 +16,6 @@
  - [Font Defender](https://mybrowseraddon.com/font-defender.html)
  - [Spoof Timezone](https://webextension.org/listing/spoof-timezone.html)
 
-Если спользуется Windows необходимо добавить `WIN_PLATFORM = True` и указать путь до исполняемого файла в `CHROME_DIR`, в случаае Linux применеятся chromium из PATH.
+Если используется Windows необходимо добавить `WIN_PLATFORM = True` и указать путь до исполняемого файла в `CHROME_DIR`, в случаае Linux применеятся chromium из PATH.
 
 Переменные `DELETE_USED_PROXIES`, `DELETE_USED_UA` определяют удаляются ли прокси и UA из файлов после создания профиля с ними.
