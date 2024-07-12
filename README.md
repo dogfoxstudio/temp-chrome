@@ -37,3 +37,9 @@ If you are using Windows, you must first add `WIN_PLATFORM = True` and specify t
 The only requirement is that the Chrome/Chromium version must be at least 88, it is allowed to use browsers derived from Chrome (Brave, Edge, Yandex.Browser)
 
 The variables `DELETE_USED_PROXIES`, `DELETE_USED_UA` determine whether proxies and UA are deleted from files after creating a profile with them.
+
+## to-do
+- English interface
+- Profile redaction from interface
+- Redaction of UAs and proxies lists from interface
+- Batch launch
