@@ -1,7 +1,7 @@
 # temp-chrome
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://https://github.com/dogfoxstudio/temp-chrome/edit/main/README.md)
-[![ru](https://img.shields.io/badge/lang-ru-green.svg)](https://https://github.com/dogfoxstudio/temp-chrome/main/README.ru.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/dogfoxstudio/temp-chrome/edit/main/README.md)
+[![ru](https://img.shields.io/badge/lang-ru-green.svg)](https://github.com/dogfoxstudio/temp-chrome/main/README.ru.md)
 
 Generate and launch anonymous Chrome profiles
 
