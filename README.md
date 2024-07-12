@@ -1,37 +1,39 @@
 # temp-chrome
 
-Генерация и запуск анонимных профилей Chrome
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://https://github.com/dogfoxstudio/temp-chrome/edit/main/README.md)
+[![ru](https://img.shields.io/badge/lang-ru-green.svg)](https://https://github.com/dogfoxstudio/temp-chrome/main/README.ru.md)
 
-![Скриншот программы](/screenshot.png)
+Generate and launch anonymous Chrome profiles
 
-Кнопкой `Новый профиль` создается новый профиль со случайным 6 значным именем, хранящийся в папке 
-`./profiles/<имя профиля>` при этом используются случайные UserAgent из файла `useragents.txt` и прокси из файла `proxies.txt`.
-Насатройки профиля хранятся в файле `./profiles/<имя профиля>/settings.txt`
+![Program Screenshot](/screenshot.png)
 
-При запуске существующего профиля используются UA и прокси выбранные при создании профиля, которые можно изменить редактированием `./profiles/<имя профиля>/settings.txt`.
+By pressing `Новый профиль` one creates new anonymous profile with random 6 character name, which stores in folder `./profiles/<profile name>` using random UserAgent from the file `useragents.txt ` and the proxy from the file `proxies.txt `.
+Profile settings are stored in `./profiles/<profile_name>/settings.txt`
 
-Анонимность достигается за счет:
- - использования прокси
- - независимости профилей между собой
- - подмены UserAgent
- - спуфинга часовых поясов
- - подмены отпечатков шрифтов, Canvas, WebGL
+When launching an existing profile, the UserAgent and proxy selected when creating the profile are used, which can be changed by editing `./profiles/<profile name>/settings.txt`.
 
-В проекте используются следующие расширения Chrome от сторонних разработчиков:
+Anonymity is achieved by:
+- using proxy
+- independence of profiles among themselves
+- UserAgent spoofing
+- time zone spoofing
+- substitution of fake font, Canvas and WebGL footprints
+
+The project uses the following Chrome extensions from third-party developers:
  - [Canvas Defender](https://mybrowseraddon.com/canvas-defender.html)
  - [WebGL Defender](https://mybrowseraddon.com/webgl-defender.html)
  - [Font Defender](https://mybrowseraddon.com/font-defender.html)
  - [Spoof Timezone](https://webextension.org/listing/spoof-timezone.html)
 
-## Запуск
+## Launch
 
-Запуск осуществляется вызовом 
+The launch is carried out by execution of
 ```{python}
 python gui_launch.py
 ```
 
-Если используется Windows предварительно необходимо добавить `WIN_PLATFORM = True` и указать путь до исполняемого файла в `CHROME_DIR` в файле `gui_launch.py`, в случаае Linux применеятся chromium из PATH. 
+If you are using Windows, you must first add `WIN_PLATFORM = True` and specify the path to the executable file in `CHROME_DIR` in the file `gui_launch.py `, in the case of Linux, chromium from PATH is used.
 
-Единственное требование версия Chrome/Chromium должна быть не ниже 88, допускается использование браузеров производных от Chrome (Brave, Edge, Yandex.Browser)
+The only requirement is that the Chrome/Chromium version must be at least 88, it is allowed to use browsers derived from Chrome (Brave, Edge, Yandex.Browser)
 
-Переменные `DELETE_USED_PROXIES`, `DELETE_USED_UA` определяют удаляются ли прокси и UA из файлов после создания профиля с ними.
+The variables `DELETE_USED_PROXIES`, `DELETE_USED_UA` determine whether proxies and UA are deleted from files after creating a profile with them.
