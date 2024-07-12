@@ -17,7 +17,7 @@ Anonymity is achieved by:
 - independence of profiles among themselves
 - UserAgent spoofing
 - time zone spoofing
-- substitution of fake font, Canvas and WebGL footprints
+- substitution of fake font, Canvas and WebGL fingerprints
 
 The project uses the following Chrome extensions from third-party developers:
  - [Canvas Defender](https://mybrowseraddon.com/canvas-defender.html)
