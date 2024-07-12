@@ -10,7 +10,7 @@ Generate and launch anonymous Chrome profiles
 By pressing `Новый профиль` one creates new anonymous profile with random 6 character name, which stores in folder `./profiles/<profile name>` using random UserAgent from the file `useragents.txt ` and the proxy from the file `proxies.txt `.
 Profile settings are stored in `./profiles/<profile_name>/settings.txt`
 
-When launching an existing profile, the UserAgent and proxy selected when creating the profile are used, which can be changed by editing `./profiles/<profile name>/settings.txt`.
+When launching an existing profile (`Запустить профиль`), the UserAgent and proxy selected when creating the profile are used, which can be changed by editing `./profiles/<profile name>/settings.txt`.
 
 Anonymity is achieved by:
 - using proxy
