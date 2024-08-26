@@ -43,3 +43,5 @@ The variables `DELETE_USED_PROXIES`, `DELETE_USED_UA` determine whether proxies 
 - Profile redaction from interface
 - Redaction of UAs and proxies lists from interface
 - Batch launch
+
+  ## All basic goals have been achieved, the project is temporarily frozen
